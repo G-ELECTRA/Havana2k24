@@ -12277,7 +12277,7 @@ p {
   transition: all, 0.3s;
 }
 
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
   .service-card .body .subtitle {
     -webkit-transition: none;
     transition: none;
@@ -12290,12 +12290,16 @@ p {
   margin-bottom: 15px;
 }
 
-.service-card:hover .body .subtitle {
+.service-card:hover .body .subtitle{
   bottom: 7px;
   opacity: 1;
   visibility: visible;
 }
-
+*/
+.btn{
+  border-radius: 30px;
+}
+*/
 /*/ portfolio wrapper */
 .portfolio-card {
   display: block;
@@ -12524,7 +12528,10 @@ p {
   min-width: 350px;
   max-width: 350px;
 }
-
+.blog-card-header1 {
+  min-width: 500px;
+  max-width: 1500px;
+}
 .blog-card-img {
   border-radius: 0 0 0 0;
   width: 100%;
@@ -13201,22 +13208,28 @@ pre .code {
   padding: 10px;
   line-height: normal;
 }
-.header #leftLogo,
-.header #rightLogo {
+.header .logos #leftLogo,
+.header .logos #rightLogo {
   box-sizing: content-box;
   vertical-align: middle;
 }
-.header #leftLogo{
+.header .logos #leftLogo{
   width: 100px;
+  transform:rotate(90deg);
 }
-.header #rightLogo {
-  width: 200px;
+.header .logos #rightLogo {
+  width: 100px;
   float:right;
 }
 .header::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -13234,7 +13247,22 @@ pre .code {
     transform: scale(1);
   }
 }
+@media only screen and (max-width: 767px) {
+  .header .logos #leftLogo {
+    width: auto; /* Adjust the width as needed for mobile */
+    transform: none; /* Remove rotation for mobile */
+  }
 
+  .header .logos #rightLogo {
+    width: auto; /* Adjust the width as needed for mobile */
+    float: none; /* Remove float for mobile */
+  }
+
+  .logos {
+    flex-direction: column; /* Stack logos vertically for mobile */
+    align-items: center; /* Center align logos for mobile */
+  }
+}
 
 
 .header .overlay {
