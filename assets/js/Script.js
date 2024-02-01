@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
   animateLogo('rightLogo');
 });
 
-//function animateLogo(logoId) {
-  //const logo = document.getElementById(logoId);
+function animateLogo(logoId) {
+  const logo = document.getElementById(logoId);
 
-  //if (logo) {
-    //logo.style.animation = 'logoAnimation 2s ease-in-out infinite'; // Adjust animation properties
-  //}
-//}
+  if (logo) {
+    logo.style.animation = 'logoAnimation 2s ease-in-out infinite'; // Adjust animation properties
+  }
+}
   
 // <![CDATA[  <-- For SVG support
 if ('WebSocket' in window) {

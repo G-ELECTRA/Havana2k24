@@ -13193,19 +13193,49 @@ pre .code {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* background-image: url('..\imgs\circuit.jpeg'); */
+  background-image: url('../imgs/circuit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   justify-content: space-between;
   padding: 10px;
-
+  line-height: normal;
+}
+.header #leftLogo,
+.header #rightLogo {
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+.header #leftLogo{
+  width: 100px;
+}
+.header #rightLogo {
+  width: 200px;
+  float:right;
+}
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/*#leftLogo,
-#rightLogo {
-  max-width: 50px;
-}*/
+
+@keyframes logoAnimation {
+  0% {
+    /* Initial state of the animation */
+    transform: scale(1);
+  }
+  50% {
+    /* Middle state of the animation */
+    transform: scale(1.2);
+  }
+  100% {
+    /* Final state of the animation */
+    transform: scale(1);
+  }
+}
+
+
 
 .header .overlay {
   position: absolute;
