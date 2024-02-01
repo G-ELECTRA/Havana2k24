@@ -13193,12 +13193,12 @@ pre .code {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url('./assets/imgs/_6268800a-f3f4-40e4-9806-54fa2ca7284e.jpeg');
+  /*background-image: url('./assets/imgs/_6268800a-f3f4-40e4-9806-54fa2ca7284e.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px;*/
 
 }
 
