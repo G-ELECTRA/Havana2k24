@@ -13247,22 +13247,6 @@ pre .code {
     transform: scale(1);
   }
 }
-@media only screen and (max-width: 767px) {
-  .header .logos #leftLogo {
-    width: auto; /* Adjust the width as needed for mobile */
-    transform: none; /* Remove rotation for mobile */
-  }
-
-  .header .logos #rightLogo {
-    width: auto; /* Adjust the width as needed for mobile */
-    float: none; /* Remove float for mobile */
-  }
-
-  .logos {
-    flex-direction: column; /* Stack logos vertically for mobile */
-    align-items: center; /* Center align logos for mobile */
-  }
-}
 
 
 .header .overlay {
