@@ -13215,7 +13215,6 @@ pre .code {
 }
 .header .logos #leftLogo{
   width: 100px;
-  transform:rotate(90deg);
 }
 .header .logos #rightLogo {
   width: 100px;
@@ -13231,7 +13230,19 @@ pre .code {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 767px) {
+  .logos {
+    flex-direction: row; /* Stack logos vertically for mobile */
+  }
+  #leftLogo {
+    width: 35px; /* Set a fixed width for the left logo on mobile */
+    transform: none; /* Remove rotation for mobile */
+  }
 
+  #rightLogo {
+    width: 35px; /* Set a fixed width for the right logo on mobile */
+  }
+}
 
 @keyframes logoAnimation {
   0% {
@@ -13247,6 +13258,7 @@ pre .code {
     transform: scale(1);
   }
 }
+
 
 
 .header .overlay {
