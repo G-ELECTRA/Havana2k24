@@ -201,7 +201,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Baloo Paaji';
   font-size: 1em;
 }
 
@@ -11720,7 +11720,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Baloo Paaji';
 }
 
 .text-justify {
@@ -12181,12 +12181,12 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Baloo Paaji';
   color: #695aa6;
 }
 
 .my-font {
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Baloo Paaji';
 }
 
 p {
@@ -12755,7 +12755,7 @@ pre .code {
   align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Baloo Paaji';
 }
 
 @media (prefers-reduced-motion: reduce) {
