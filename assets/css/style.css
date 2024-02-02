@@ -12594,6 +12594,12 @@ p {
     min-width: 100%;
   }
 }
+@media(max-width: 767px){
+  .blog-card .blog-card-header1 img{
+    min-width: auto;
+    max-width: 100%;
+  }
+}
 
 pre {
   border: 2px solid #dee2e6;
@@ -13399,10 +13405,6 @@ pre .code {
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
-  }
-  .blog-card .blog-card-header1 img{
-    min-width: auto;
-    max-width: 100%;
   }
 }
 
