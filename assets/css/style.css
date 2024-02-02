@@ -13236,7 +13236,7 @@ pre .code {
   }
   #leftLogo {
     width: 20px; /* Set a fixed width for the left logo on mobile */
-    transform: none; /* Remove rotation for mobile */
+     /* Remove rotation for mobile */
   }
 
   #rightLogo {
