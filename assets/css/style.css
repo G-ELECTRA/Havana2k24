@@ -201,7 +201,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'Baloo Paaji';
+  font-family: 'Baloo Paaji', cursive;
   font-size: 1em;
 }
 
@@ -11720,7 +11720,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: 'Baloo Paaji';
+  font-family: 'Baloo Paaji', cursive;
 }
 
 .text-justify {
@@ -12181,12 +12181,12 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-family: 'Baloo Paaji';
+  font-family: 'Baloo Paaji', cursive;
   color: #695aa6;
 }
 
 .my-font {
-  font-family: 'Baloo Paaji';
+  font-family: 'Baloo Paaji', cursive;
 }
 
 p {
@@ -12755,7 +12755,7 @@ pre .code {
   align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  font-family: 'Baloo Paaji';
+  font-family: 'Baloo Paaji', cursive;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -13242,6 +13242,7 @@ pre .code {
   }
   .header .logos #leftLogo {
     width: 50px; /* Set a fixed width for the left logo on mobile */
+     /* Remove rotation for mobile */
   }
 
   .header .logos #rightLogo {
