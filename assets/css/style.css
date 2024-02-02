@@ -13235,12 +13235,12 @@ pre .code {
     flex-direction: row; /* Stack logos vertically for mobile */
   }
   #leftLogo {
-    width: 35px; /* Set a fixed width for the left logo on mobile */
+    width: 20px; /* Set a fixed width for the left logo on mobile */
     transform: none; /* Remove rotation for mobile */
   }
 
   #rightLogo {
-    width: 35px; /* Set a fixed width for the right logo on mobile */
+    width: 20px; /* Set a fixed width for the right logo on mobile */
   }
 }
 
