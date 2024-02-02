@@ -13231,15 +13231,15 @@ pre .code {
   justify-content: space-between;
 }
 @media only screen and (max-width: 767px) {
-  .logos {
+  .header .logos {
     flex-direction: row; /* Stack logos vertically for mobile */
   }
-  #leftLogo {
+  .header .logos #leftLogo {
     width: 20px; /* Set a fixed width for the left logo on mobile */
      /* Remove rotation for mobile */
   }
 
-  #rightLogo {
+  .header .logos #rightLogo {
     width: 20px; /* Set a fixed width for the right logo on mobile */
   }
 }
