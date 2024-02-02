@@ -13235,12 +13235,12 @@ pre .code {
     flex-direction: row; /* Stack logos vertically for mobile */
   }
   .header .logos #leftLogo {
-    width: 20px; /* Set a fixed width for the left logo on mobile */
+    width: 50px; /* Set a fixed width for the left logo on mobile */
      /* Remove rotation for mobile */
   }
 
   .header .logos #rightLogo {
-    width: 20px; /* Set a fixed width for the right logo on mobile */
+    width: 50px; /* Set a fixed width for the right logo on mobile */
   }
 }
 
@@ -13399,6 +13399,10 @@ pre .code {
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
+  }
+  .blog-card .blog-card-header1 img{
+    min-width: auto;
+    max-width: 100%;
   }
 }
 
