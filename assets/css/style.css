@@ -13247,6 +13247,7 @@ pre .code {
 
   .header .logos #rightLogo {
     width: 50px; /* Set a fixed width for the right logo on mobile */
+    justify-content: center;
   }
 }
 
