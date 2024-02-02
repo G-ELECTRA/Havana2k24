@@ -13239,16 +13239,13 @@ pre .code {
 @media only screen and (max-width: 767px) {
   .header .logos {
     flex-direction: row; /* Stack logos vertically for mobile */
- /* Stack logos vertically for mobile */
   }
   .header .logos #leftLogo {
     width: 50px; /* Set a fixed width for the left logo on mobile */
-    justify-content: flex-start;
   }
 
   .header .logos #rightLogo {
     width: 50px; /* Set a fixed width for the right logo on mobile */
-    justify-content: flex-end;
   }
 }
 
