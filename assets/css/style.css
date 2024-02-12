@@ -8,6 +8,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   --blue: #1e549f;
@@ -51,6 +52,11 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media only screen and (max-width: 768px) {
+  html, body {
+      font-family: 'Roboto', sans-serif; /* Use Roboto for mobile devices */
+  }
 }
 
 article,
@@ -13241,13 +13247,14 @@ pre .code {
     flex-direction: row; /* Stack logos vertically for mobile */
   }
   .header .logos #leftLogo {
-    width: 50px; /* Set a fixed width for the left logo on mobile */
+    width: 30px; /* Set a fixed width for the left logo on mobile */
      /* Remove rotation for mobile */
   }
 
   .header .logos #rightLogo {
-    width: 50px; /* Set a fixed width for the right logo on mobile */
+    width: 30px; /* Set a fixed width for the right logo on mobile */
     justify-content: center;
+    
   }
 }
 
