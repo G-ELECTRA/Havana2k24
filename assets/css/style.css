@@ -12605,10 +12605,17 @@ p {
     min-width: auto;
     max-width: 100%;
   }
-  .blog-card-header1 {
-    overflow-x: scroll;
 }
+@media only screen and (max-width: 767px) {
+  .horizontal-scroll {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      overflow-y: hidden; /* Disable vertical scrolling */
+      white-space: nowrap; /* Prevent the image from wrapping */
+      -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+      /* Additional styles can be added here if needed */
+  }
 }
+
 
 pre {
   border: 2px solid #dee2e6;
@@ -13256,7 +13263,7 @@ pre .code {
 
   .header .logos #rightLogo {
     width: 42px; /* Set a fixed width for the right logo on mobile */
-    justify-content: left;
+    justify-content: flex-start;
     
   }
 }
