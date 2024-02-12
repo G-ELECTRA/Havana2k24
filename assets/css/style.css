@@ -12605,6 +12605,9 @@ p {
     min-width: auto;
     max-width: 100%;
   }
+  .blog-card-header1 {
+    overflow-x: scroll;
+}
 }
 
 pre {
@@ -13247,13 +13250,13 @@ pre .code {
     flex-direction: row; /* Stack logos vertically for mobile */
   }
   .header .logos #leftLogo {
-    width: 30px; /* Set a fixed width for the left logo on mobile */
+    width: 42px; /* Set a fixed width for the left logo on mobile */
      /* Remove rotation for mobile */
   }
 
   .header .logos #rightLogo {
-    width: 30px; /* Set a fixed width for the right logo on mobile */
-    justify-content: center;
+    width: 42px; /* Set a fixed width for the right logo on mobile */
+    justify-content: left;
     
   }
 }
