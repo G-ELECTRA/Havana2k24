@@ -12601,10 +12601,16 @@ p {
   }
 }
 @media(max-width: 767px){
-  .blog-card .blog-card-header1 img{
-    min-width: auto;
-    max-width: 100%;
+  .blog-card-header1 .horizontal-scroll {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
   }
+  
+  .blog-card {
+    display: inline-block; /* Display the blog card elements inline */
+    vertical-align: top; /* Align the cards to the top */
+  }
+  
 }
 @media only screen and (max-width: 767px) {
   .horizontal-scroll {
