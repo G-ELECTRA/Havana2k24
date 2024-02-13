@@ -13038,6 +13038,12 @@ pre .code {
     visibility: visible;
   }
 }
+@media only screen and (max-width: 767px) {
+  .contact-info{
+    font-size: calc(10px + (22 - 10) * ((100vw - 100px) / (1300 - 100)));
+    font-weight: bold;
+  }
+}
 
 @media (max-width: 991.98px) {
   .custom-navbar .hamburger {
