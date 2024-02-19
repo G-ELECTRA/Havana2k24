@@ -44,6 +44,23 @@ function animateLogo(logoId) {
     logo.style.animation = 'logoAnimation 2s ease-in-out infinite'; // Adjust animation properties
   }
 }
+let sponsors = document.querySelectorAll('#sponsorSlider > div');
+let index = 1; // Start index at 1 to skip the title sponsor
+
+$(document).ready(function(){
+  $('#sponsorSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: false
+  });
+});
+
+
+slide(); // Initial call to start the sliding
+
   
 // <![CDATA[  <-- For SVG support
 if ('WebSocket' in window) {

@@ -12372,6 +12372,40 @@ p {
     margin-bottom: 30px;
   }
 }
+/* Style for the portfolio cards */
+.portfolio-card {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Style for the portfolio card images */
+.portfolio-card-img {
+  width: auto;
+  max-height: 200px; /* Set a fixed height for the images */
+  display: block;
+  margin: 0 auto; /* Center the images */
+  object-fit: contain; /* Prevent the images from stretching */
+}
+
+/* For devices with a screen width of 768px or less (tablets and mobile devices) */
+@media (max-width: 768px) {
+  /* Style for the portfolio cards */
+  .portfolio-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between cards */
+  }
+
+  /* Style for the portfolio card images */
+  .portfolio-card-img {
+    width: 100%;
+    max-height: 200px; /* Set a fixed height for the images */
+    display: block;
+    margin: 0 auto; /* Center the images */
+    object-fit: contain; /* Prevent the images from stretching */
+  }
+}
+
 
 /* Pricing card */
 .pricing-wrapper {
