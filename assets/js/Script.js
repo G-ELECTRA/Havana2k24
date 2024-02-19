@@ -44,22 +44,48 @@ function animateLogo(logoId) {
     logo.style.animation = 'logoAnimation 2s ease-in-out infinite'; // Adjust animation properties
   }
 }
-let sponsors = document.querySelectorAll('#sponsorSlider > div');
-let index = 1; // Start index at 1 to skip the title sponsor
 
+function slide() {
+    // Hide all sponsors
+    sponsors.forEach(sponsor => {
+        sponsor.style.display = 'none';
+    });
+
+    // Display title sponsor
+    sponsors[0].style.display = 'block';
+
+    // Display two sponsors at a time, starting from index
+    for (let i = index; i < index + 2; i++) {
+        if (i >= sponsors.length) {
+            break;
+        }
+        sponsors[i].style.display = 'block';
+    }
+
+    // Update index for the next iteration
+    index += 2;
+    if (index >= sponsors.length) {
+        index = 1; // Reset index to skip the title sponsor
+    }
+
+    setTimeout(slide, 3000); // Adjust the delay as needed (3000 = 3 seconds)
+}
+
+slide(); // Initial call to start the sliding
+
+
+// Initialize the Slick Carousel slider
 $(document).ready(function(){
   $('#sponsorSlider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     dots: true,
     arrows: false
   });
 });
 
-
-slide(); // Initial call to start the sliding
 
   
 // <![CDATA[  <-- For SVG support
